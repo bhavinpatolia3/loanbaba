@@ -464,11 +464,180 @@
                                             class="pt10 theme-text"><u><b>Privacy Policy.</b></u></a> </label> </div>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col s12"> <a aria-label="Apply"
                                     class="waves-effect waves-light btn right">Apply</a>
                             </div>
                         </div>
+
+                        <!-- Bank A/C Verification Details -->
+                        <div class="leftside-title mt15">
+                            <i class="fa fa-bank font21 theme-text" aria-hidden="true"> </i>
+                            Bank A/C Verification Details </div>
+                        <div class="row content-body mr0 ml0 pb15">
+                            <div class="row col s12">
+                                <h3 class="mt15 mb0 ">
+                                    <i class="fa fa-chevron-circle-right theme-text pr5" aria-hidden="true"></i>
+                                    Bank Statement
+                                </h3>
+                                <p id="BPNOTE1" class="font-roboto f5 mcolor-blue text-center mb10 bold">NOTE: Please
+                                    upload last 4 months bank statements.</p>
+                                <div class="col m6 l3 mt10">
+                                    <div class="input-group">
+                                        <input type="file" name="FileUploadBankStatement1"
+                                            id="FileUploadBankStatement1">
+                                    </div>
+                                </div>
+                                <div class="col m6 l9 mt10">
+                                    <button type="submit" name="btnStatement" id="ButtonBankStatement1"
+                                        class="btnadd">Add New</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt15">
+                            <div class="col s6 left-align prev">
+                                <a href="#" class="btn-prev">Previous Step
+                                    <span>Address Information</span> </a>
+                            </div>
+                            <div class="col s6 right-align next">
+                                <a href="#" class="btn-next">Next
+                                    <span>Social media verification</span></a>
+                            </div>
+                        </div>
+
+                        <!-- Social Media verification -->
+                        <div class="leftside-title mt15">
+                            <i class="fa fa-chain font21 theme-text" aria-hidden="true"> </i>
+                            Social Media Verification Details </div>
+                        <div class="row content-body mr0 ml0 pb15">
+                            <div class="row col s12">
+                                <h3 class="mt15 mb0 ">
+                                    <i class="fa fa-chevron-circle-right theme-text pr5" aria-hidden="true"></i>
+                                    Social Media Verification
+                                </h3>
+                                <p id="BPNOTE2" class="font-roboto f5 mcolor-blue text-center mb10 bold">By adding social
+                                    media profiles, our institution can better assess your identity, thus it is
+                                    advisable to link these accounts.</p>
+                                <div class="row">
+                                    <div id="butnewfb" class="input-field col s12 m6 l3">
+                                        <div class="fb-login-button mr10" data-max-rows="1" data-size="large"
+                                            data-button-type="continue_with" data-show-faces="false"
+                                            data-auto-logout-link="false" data-use-continue-as="true"
+                                            data-scope="public_profile,email,user_posts,user_location,user_likes,user_tagged_places"
+                                            data-onlogin="checkLoginState();">
+                                        </div>
+                                        <div id="status"></div>
+                                        <div id="waitMessage"></div>
+                                    </div>
+                                    <div id="divLabfacbook" class="input-field col s12 m6 l3">
+                                        <span id="Labfacbook"
+                                            style="color:Green;font-size:14px;font-weight:bold;"></span>
+                                    </div>
+
+                                    <div id="divLinkedinNew" class="input-field col s6">
+
+                                    </div>
+                                    <div id="divlinkedinMsg" class="input-field col s6">
+
+                                    </div>
+                                    <div id="divgoogle" class="input-field col s6">
+
+                                    </div>
+                                    <div id="divGoogleMsg" class="input-field col s6">
+
+                                    </div>
+                                    <div id="divTrueCaller" class="input-field col s6">
+
+                                    </div>
+                                    <div id="divlbTrueCaller" class="input-field col s6">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt15">
+                            <div class="col s6 left-align prev">
+                                <a href="#" class="btn-prev">Previous Step
+                                    <span>Bank A/c Verification</span> </a>
+                            </div>
+                            <div class="col s6 right-align next">
+                                <a href="#" class="btn-next">Next
+                                    <span>Other Details</span></a>
+                            </div>
+
+                        </div>
+
+                        <!-- Other information -->
+                        <div class="leftside-title mt15">
+                            <i class="fa fa-user font21 theme-text" aria-hidden="true"> </i>
+                            Other Information </div>
+                        <div class="row content-body mr0 ml0 pb15">
+                            <div class="row col s12">
+                                <h3 class="mt15 mb0 ">
+                                    <i class="fa fa-chevron-circle-right theme-text pr5" aria-hidden="true"></i>
+                                    Upload documents
+                                </h3>
+                                <span class="payslip-ttl">Payslip 1</span>
+                                <div class="col m6 l3 mt10">
+                                    <div class="input-group">
+                                        <input type="file" name="FileUploadBankStatement1"
+                                            id="FileUploadBankStatement1">
+                                    </div>
+                                </div>
+                                <div class="col m6 l9 mt10">
+                                    <button type="submit" name="btnStatement" id="ButtonBankStatement1"
+                                        class="btnadd">Add
+                                        New</button>
+                                </div>
+                                <div class="clearfix"></div>
+                                <h3 class="mb10">
+                                    <i class="fa fa-chevron-circle-right theme-text pr5" aria-hidden="true"></i>
+                                    Reference details
+                                </h3>
+                                <div class="col s12 m1 l1 mt10 mpb20"><span class="refernum">1</span></div>
+                                <div class="input-field col s12 m5 l3">
+                                    <input name="ReferenceFname" type="text" id="ReferenceFname" class="validate">
+                                    <label for="ReferenceFname">Full Name <span class="mcolor-red">*</span></label>
+                                </div>
+                                <div class="input-field col s12 m6 l3"> <input aria-label="refrenceMobile" type="text"
+                                        id="refrenceMobile" class="validate pl30 mob-width" />
+                                    <label for="refrenceMobile" id="lblrefrenceMobile" class="pl30 form-labels">Mobile
+                                        Number
+                                        <span class="mcolor-red">*</span>
+                                    </label>
+                                    <span class="ncode">+91</span>
+                                    <span class="error" id="refrenceMobile_error"></span> </div>
+                                <div class="clearfix"></div>
+                                <div class="col s12 m1 l1 mt10 mpb20"><span class="refernum">2</span></div>
+                                <div class="input-field col s12 m5 l3">
+                                    <input name="ReferenceFname2" type="text" id="ReferenceFname2" class="validate">
+                                    <label for="ReferenceFname2">Full Name <span class="mcolor-red">*</span></label>
+                                </div>
+                                <div class="input-field col s12 m6 l3"> <input aria-label="refrenceMobile2" type="text"
+                                        id="refrenceMobile2" class="validate pl30 mob-width" />
+                                    <label for="refrenceMobile2" id="lblrefrenceMobile2" class="pl30 form-labels">Mobile
+                                        Number
+                                        <span class="mcolor-red">*</span>
+                                    </label>
+                                    <span class="ncode">+91</span>
+                                    <span class="error" id="refrenceMobile2_error"></span> </div>
+                            </div>
+                        </div>
+                        <div class="row mt15">
+                            <div class="col s6 left-align prev">
+                                <a href="#" class="btn-prev">Previous Step
+                                    <span>Social media verification</span> </a>
+                            </div>
+                            <div class="col s6 right-align next">
+                                <a href="#" class="btn-next">Next
+                                    <span>Your information</span></a>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="row sclbg mr0 ml0 pb50 pt20 mt20">
                             <div class="col l12 m12 s12">
                                 <div class="features_info "> <img class="dot_img hide-on-small-only"
@@ -1849,54 +2018,54 @@
 
     <!-- Modal Login -->
     <div class="modal" id="loginFormModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <h4> <a class="fa fa-times modal-close right mcolor-black font18"></a></h4>
-                        <div class="row mb0">
-                            <!-- Login Form Start -->
-                            <div class="text-center">
-                                <h4 class="mcolor-loan">Sign in</h4>
-                                <p>Please enter your email ID and Mobile number to login.</p>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 input-field">
-                                    <i class="fa fa-envelope-o prefix"></i>
-                                    <input type="text" name="loginemail" id="loginemail">
-                                    <label for="loginemail" class="actives">Email Id</label>
-                                </div>
-                                <div class="col s12 input-field ">
-                                    <i class="fa fa-mobile prefix login-phone-icon"></i>
-                                    <input name="loginmobile" type="text" maxlength="10" id="loginmobile">
-                                    <label for="loginmobile" class="actives">Mobile Number</label>
-                                </div>
-                            </div>
-                            <div class="col s12">
-                                <input id="login-term" type="checkbox"
-                                    name="login-term" checked="checked" class="filled-in">
-                                <label for="login-term">I
-                                    authorize loanbaba.com &amp; its partners to call/SMS/email me about
-                                    its products. This overrides my number being in the NDNC registry.I
-                                    also authorize loanbaba.com &amp; it's partners to fetch my
-                                    Credit/CIBIL report when needed.I accept that approval of loan is a
-                                    sole discretion of the bank.I agree to all Terms &amp; Conditions
-                                    and Privacy Policy.</label>
-                                <a href="https://www.loanbaba.com/privacy-policy.html" target="_blank" class="pl30">View Our
-                                    Privacy Policy.</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="btn btn-primary px50 py10 my10">Login</a>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="text-center my10">
-                                <a id="changeMobileNum" href="#">Change Your Mobile Number</a>
-                            </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h4> <a class="fa fa-times modal-close right mcolor-black font18"></a></h4>
+                <div class="row mb0">
+                    <!-- Login Form Start -->
+                    <div class="text-center">
+                        <h4 class="mcolor-loan">Sign in</h4>
+                        <p>Please enter your email ID and Mobile number to login.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <i class="fa fa-envelope-o prefix"></i>
+                            <input type="text" name="loginemail" id="loginemail">
+                            <label for="loginemail" class="actives">Email Id</label>
                         </div>
+                        <div class="col s12 input-field ">
+                            <i class="fa fa-mobile prefix login-phone-icon"></i>
+                            <input name="loginmobile" type="text" maxlength="10" id="loginmobile">
+                            <label for="loginmobile" class="actives">Mobile Number</label>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <input id="login-term" type="checkbox" name="login-term" checked="checked" class="filled-in">
+                        <label for="login-term">I
+                            authorize loanbaba.com &amp; its partners to call/SMS/email me about
+                            its products. This overrides my number being in the NDNC registry.I
+                            also authorize loanbaba.com &amp; it's partners to fetch my
+                            Credit/CIBIL report when needed.I accept that approval of loan is a
+                            sole discretion of the bank.I agree to all Terms &amp; Conditions
+                            and Privacy Policy.</label>
+                        <a href="https://www.loanbaba.com/privacy-policy.html" target="_blank" class="pl30">View Our
+                            Privacy Policy.</a>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-primary px50 py10 my10">Login</a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="text-center my10">
+                        <a id="changeMobileNum" href="#">Change Your Mobile Number</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- <div class="lean-overlay" id='materialize-lean-overlay-1'></div> -->
     <script src="./js/materialize.min.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/cssload.js"></script>
 </body>
